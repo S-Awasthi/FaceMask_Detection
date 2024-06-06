@@ -1,63 +1,52 @@
-# MaskEye
-A robust and effective mask detection system
+# MaskEye: Effective Mask Detection System
 
+## Introduction
 
-## Overview
+MaskEye is a project focused on developing a machine learning model capable of detecting whether individuals in images are wearing face masks. Utilizing Python, OpenCV, and machine learning libraries, this project is designed to run efficiently in Google Colab.
 
-This project focuses on developing a machine learning model to detect whether individuals in images are wearing face masks. The model is built using Python, OpenCV, and machine learning libraries, and is designed to be executed in Google Colab.
+## Key Features
 
-## Features
+- **Data Loading**: Import and preprocess image data from Google Drive.
+- **Data Labeling**: Classify images into "with mask" and "without mask" categories.
+- **Model Training**: Develop and train a Convolutional Neural Network (CNN) for detecting masks.
+- **Model Evaluation**: Assess the model's accuracy and performance using test data.
+- **Inference**: Predict mask presence in new images.
 
-- **Data Loading**: Load and preprocess image data from Google Drive.
-- **Data Labeling**: Categorize images into "with mask" and "without mask" labels.
-- **Model Training**: Train a Convolutional Neural Network (CNN) for mask detection.
-- **Evaluation**: Evaluate the model's performance on test data.
-- **Inference**: Make predictions on new images.
-
-## Prerequisites
+## Requirements
 
 - Python 3.x
 - Google Colab
 - Google Drive account
 - Libraries: OpenCV, TensorFlow/Keras, NumPy, os
 
-## Installation
+## Setup Instructions
 
-1. Clone the repository or download the project files.
-2. Open the `mask_detection.ipynb` file in Google Colab.
-3. Ensure the required libraries are installed:
-   ```bash
-   !pip install opencv-python
-   !pip install tensorflow
-   ```
-## Usage
+1. Clone this repository or download the project files.
+2. Open `mask_detection.ipynb` in Google Colab.
+3. Install the necessary libraries:
+    ```python
+    !pip install opencv-python
+    !pip install tensorflow
+    ```
 
-1. **Mount Google Drive**: Run the cell to mount your Google Drive to access the dataset.
+## Usage Guide
 
-2. **Data Preparation**: Load and label the image data.
+1. **Mount Google Drive**: Execute the cell to mount your Google Drive to access the dataset.
+2. **Prepare Data**: Load and label the image data.
+3. **Train Model**: Define and train the CNN model.
+4. **Evaluate Model**: Assess the model using test data.
+5. **Inference**: Use the trained model to make predictions on new images.
 
-3. **Model Training**: Define and train the CNN model.
+## Dataset Organization
 
-4. **Model Evaluation**: Evaluate the model on test data.
-5. 
-6. **Inference**: Make predictions on new images.
+The dataset should be structured in Google Drive with two primary directories:
+- `with_mask`: Contains images of individuals wearing masks.
+- `without_mask`: Contains images of individuals without masks.
 
+## Contributions
 
-## Dataset
-
-The dataset should be organized in Google Drive with two main directories:
-- `with_mask`: Contains images of people wearing masks.
-- `without_mask`: Contains images of people not wearing masks.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any improvements.
+Contributions are welcome! Fork the repository and submit a pull request with your improvements.
 
 ## Acknowledgements
 
-- This project utilizes [OpenCV](https://opencv.org/) and [TensorFlow](https://www.tensorflow.org/).
-- Thanks to the creators of the datasets used for training and evaluation.
-
----
-
-
+This project leverages OpenCV and TensorFlow. Special thanks to the creators of the datasets used for training and evaluation.
